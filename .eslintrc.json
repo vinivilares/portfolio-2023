@@ -31,10 +31,12 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          ["/^react/", "/^next/"],
-          "/^module/",
+          "/^next/",
+          "/^react/",
+          "/^components/",
+          "/module/",
+          "/absolute/",
           "/^@shared/",
-          "/^absolute/",
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
