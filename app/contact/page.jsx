@@ -1,8 +1,16 @@
+import Link from 'next/link';
+
+import styles from './page.module.css';
+
+import GithubIcon from '../../Icons/github-icon';
+import LinkedinIcon from '../../Icons/linkedin-icon';
+import MailIcon from '../../Icons/mail-icon';
+import Info from '../components/Info/Info';
 import Navbar from '../components/Navbar/Navbar';
 
 export default function Contact() {
   return (
-    <main>
+    <>
       <Navbar
         page1={'Home'}
         link1={'/'}
@@ -11,7 +19,31 @@ export default function Contact() {
         page3={'About'}
         link3={'/about'}
       />
-      <h1>Contact Page</h1>
-    </main>
+      <main className={`${styles.main} ${styles.centered}`}>
+        <Info
+          h1={'Contact Me'}
+          p={'Send me an '}
+          words={['email', 'message']}
+        />
+        <ul>
+          <li>
+            <MailIcon />
+          </li>
+          <li>
+            <Link href={'https://github.com/vinivilares/'} target="_blank">
+              <GithubIcon />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={'https://www.linkedin.com/in/vinivilares/'}
+              target="_blank"
+            >
+              <LinkedinIcon />
+            </Link>
+          </li>
+        </ul>
+      </main>
+    </>
   );
 }

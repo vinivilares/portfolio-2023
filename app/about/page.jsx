@@ -1,8 +1,10 @@
+import styles from './page.module.css';
+
 import Navbar from '../components/Navbar/Navbar';
 
 export default function About() {
   return (
-    <main>
+    <>
       <Navbar
         page1={'Home'}
         link1={'/'}
@@ -11,7 +13,9 @@ export default function About() {
         page3={'Projects'}
         link3={'/projects'}
       />
-      <h1>About Page</h1>
-    </main>
+      <main className={styles.main}>
+        <h1>About Page</h1>
+      </main>
+    </>
   );
 }

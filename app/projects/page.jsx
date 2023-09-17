@@ -1,8 +1,14 @@
+import Link from 'next/link';
+
+import styles from './page.module.css';
+
+import ExternalLinkIcon from '../../Icons/link-icon';
+import Info from '../components/Info/Info';
 import Navbar from '../components/Navbar/Navbar';
 
 export default function Projects() {
   return (
-    <main>
+    <>
       <Navbar
         page1={'Home'}
         link1={'/'}
@@ -11,7 +17,26 @@ export default function Projects() {
         page3={'About'}
         link3={'/about'}
       />
-      <h1>Project page</h1>
-    </main>
+      <main className={styles.main}>
+        <Info
+          h1={'See my work'}
+          p={'Hover over project name to see my projects'}
+          words={['']}
+        />
+
+        <ul>
+          <li>
+            <Link
+              href={'https://zine-space.vercel.app/'}
+              className={styles.projectItem}
+              target="_blank"
+            >
+              <p>Zine</p>
+              <ExternalLinkIcon />
+            </Link>
+          </li>
+        </ul>
+      </main>
+    </>
   );
 }

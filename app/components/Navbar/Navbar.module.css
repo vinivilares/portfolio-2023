@@ -1,11 +1,14 @@
+.navbar {
+  position: absolute;
+  right: 0;
+}
+
 .navbar ul {
   display: flex;
-  justify-content: end;
-
   margin-block: 1rem;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .navbar ul li a {
-  padding: 1rem;
+  padding-left: 1rem;
 }

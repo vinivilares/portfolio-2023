@@ -2,14 +2,16 @@ import Link from 'next/link';
 
 import styles from './page.module.css';
 
-import Info from './components/Info';
+import Info from './components/Info/Info';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section>
-        <Info />
-      </section>
+      <Info
+        h1={'Hello World'}
+        p={"My name is Marcus and I'm a "}
+        words={['Developer', 'Designer', 'Nerd']}
+      />
       <nav>
         <ul>
           <li>
