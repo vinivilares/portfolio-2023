@@ -33,11 +33,9 @@
         "groups": [
           "/^next/",
           "/^react/",
-          "/^components/",
-          "/module/",
-          "/absolute/",
-          "/^@shared/",
-          ["parent", "sibling", "index"]
+          "/components/",
+          ["parent", "sibling", "index"],
+          "/module/"
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }

@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-import styles from './page.module.css';
+import Info from '../components/Info/Info';
+import Navbar from '../components/Navbar/Navbar';
 
 import GithubIcon from '../../Icons/github-icon';
 import LinkedinIcon from '../../Icons/linkedin-icon';
 import MailIcon from '../../Icons/mail-icon';
-import Info from '../components/Info/Info';
-import Navbar from '../components/Navbar/Navbar';
+
+import styles from './page.module.css';
 
 export default function Contact() {
   return (

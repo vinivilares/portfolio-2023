@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
-import styles from './page.module.css';
-
-import ExternalLinkIcon from '../../Icons/link-icon';
 import Info from '../components/Info/Info';
 import Navbar from '../components/Navbar/Navbar';
+
+import ExternalLinkIcon from '../../Icons/link-icon';
+
+import styles from './page.module.css';
 
 export default function Projects() {
   return (
